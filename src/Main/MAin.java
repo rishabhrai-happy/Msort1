@@ -13,7 +13,7 @@ public class MAin {
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 100);
         }
-        MergeSort.sort(array);
+        MergeSort.sort1(array);
         System.out.println("ARRAY SORTED BY MERGE SORT");
         System.out.println(Arrays.toString(array));
     }

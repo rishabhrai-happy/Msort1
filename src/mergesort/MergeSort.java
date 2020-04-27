@@ -1,7 +1,7 @@
 package mergesort;
 
 public class MergeSort {
-    public static void sort(int[] array) {
+    public static void sort1(int[] array) {
         if (array.length > 1) {
             int halfSize = array.length / 2;
             int[] leftArray = new int[halfSize];
@@ -10,8 +10,8 @@ public class MergeSort {
             System.arraycopy(array, halfSize, rightArray, 0,
                     array.length - halfSize);
 
-            sort(leftArray);
-            sort(rightArray);
+            sort1(leftArray);
+            sort1(rightArray);
 
             merge(array, leftArray, rightArray);
         }
